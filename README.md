@@ -9,6 +9,7 @@
   * 4\*4 Matrix
 * Under development :
   * Circle
+  * Bezier curve
 * Todo :
   * 2D Box
   * 3D Box
