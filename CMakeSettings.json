@@ -2,14 +2,14 @@
     // Consultez https://go.microsoft.com//fwlink//?linkid=834763 pour plus d'informations sur ce fichier.
   "configurations": [
     {
-      "name": "x86-Debug",
-      "generator": "Visual Studio 14 2015",
-      "configurationType": "Debug",
-      "inheritEnvironments": [ "msvc_x86" ],
+      "buildCommandArgs": "-v:n",
       "buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
       "cmakeCommandArgs": "",
-      "buildCommandArgs": "-v:n",
-      "ctestCommandArgs": ""
+      "configurationType": "Debug",
+      "ctestCommandArgs": "",
+      "generator": "Visual Studio 14 2015",
+      "inheritEnvironments": [ "msvc_x86" ],
+      "name": "x86-Debug"
     },
     {
       "name": "x86-Release",
