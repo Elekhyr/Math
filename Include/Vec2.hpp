@@ -45,6 +45,7 @@ namespace Math
 
 		Vec2& operator+=(const Vec2& rhs);
 		Vec2& operator-=(const Vec2& rhs);
+		Vec2& operator*=(const Vec2& rhs);
 
 		Vec2& operator+=(const T& rhs);
 		Vec2& operator-=(const T& rhs);
@@ -137,6 +138,13 @@ namespace Math
 		y -= rhs.y;
 
 		return *this;
+	}
+
+
+	template <typename T>
+	Vec2<T>& Vec2<T>::operator*= (const Vec2& rhs)
+	{
+		return x * rhs.x - y * rhs.y;
 	}
 
 	template <typename T>
@@ -248,6 +256,11 @@ namespace Math
 	template <typename T>
 	Vec2<T> operator- (Vec2<T> lhs, const Vec2<T>& rhs) {
 		return lhs -= rhs;
+	}
+
+	template <typename T>
+	Vec2<T> operator* (Vec2<T> lhs, const Vec2<T>& rhs) {
+		return lhs *= rhs;
 	}
 
 	template <typename T>
